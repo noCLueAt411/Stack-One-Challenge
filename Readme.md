@@ -11,12 +11,12 @@ Dieser Container:
 ## Start
 
 1. `.env` mit der folgenden Struktur anlegen:
+
+```bash
 SIP_SERVER=sip.fonial.de
-
 SIP_USER=DEINE_SIP_NUMMER
-
 SIP_PASSWORD=DEIN_SIP_PASSWORT
-
+```
 
 2. **Build & Start**
 ```bash
