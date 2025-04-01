@@ -12,7 +12,9 @@ Dieser Container:
 
 1. `.env` mit der folgenden Struktur anlegen:
 SIP_SERVER=sip.fonial.de
+
 SIP_USER=DEINE_SIP_NUMMER
+
 SIP_PASSWORD=DEIN_SIP_PASSWORT
 
 
