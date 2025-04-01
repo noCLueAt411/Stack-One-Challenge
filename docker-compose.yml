@@ -1,0 +1,16 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  sip-client:
+    build: .
+    container_name: sip-client
+    environment:
+      - SIP_SERVER=${SIP_SERVER}
+      - SIP_USER=${SIP_USER}
+      - SIP_PASSWORD=${SIP_PASSWORD}
+    ports:
+      - "8085:8085"
+      - "8086:8086"
+      - "8087:8087"
+    restart: unless-stopped
