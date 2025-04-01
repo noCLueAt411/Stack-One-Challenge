@@ -1,6 +1,6 @@
 # SIP Client Docker Proof of Concept
 
-## 📄 Beschreibung
+## Beschreibung
 
 Dieser Container:
 - Meldet sich bei einem SIP-Server an
@@ -8,7 +8,7 @@ Dieser Container:
 - Streamt Audio an den Angerufenen über WebSocket (Port 8086)
 - Empfängt Audio über WebSocket (Port 8087)
 
-## 🚀 Start
+## Start
 
 1. `.env` mit der folgenden Struktur anlegen:
 SIP_SERVER=sip.fonial.de
@@ -23,6 +23,8 @@ docker-compose up
 ```
 
 3. **Call auslösen bzw. testen** 
+
+Eine Datei mit dem Namen audio.wav anlegen im Projekt Ordner
 
 ```bash
 curl -X POST http://localhost:8085/call -H "Content-Type: application/json" -d '{"number": "1002"}'

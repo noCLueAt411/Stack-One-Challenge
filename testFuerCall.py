@@ -9,6 +9,6 @@ async def send_audio():
                 if not data:
                     break
                 await websocket.send(data)
-                await asyncio.sleep(0.01)  # Kleine Pause, um Stau zu vermeiden
+                await asyncio.sleep(0.01)
 
 asyncio.run(send_audio())

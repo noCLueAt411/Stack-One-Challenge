@@ -13,7 +13,7 @@ async def websocket_audio_send(websocket: WebSocket):
         with open(wav_path, "rb") as audio_file:
             while chunk := audio_file.read(4096):
                 await websocket.send_bytes(chunk)
-                await asyncio.sleep(0.02)  # Echtzeit-Nachbildung
+                await asyncio.sleep(0.02)
 
         print("Audio sent")
     except Exception as e:
