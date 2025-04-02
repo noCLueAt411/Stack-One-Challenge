@@ -89,4 +89,4 @@ curl -X POST http://localhost:8085/hangup
 ```bash
 ffmpeg -i input.wav -ar 16000 -ac 1 -sample_fmt s16 audio.wav
 ```
-- Falls keine Formatierung vorgenommen werden musste einfach die Datei in audio.wav umwandeln
+- Falls keine Formatierung vorgenommen werden musste einfach die Datei in audio.wav umbenennen.
