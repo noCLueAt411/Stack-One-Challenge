@@ -73,7 +73,14 @@ cd tests
 python3 test_receive_audio_from_call.py
 ```
 
-**Eigene Audio anlegen**
+6. **Call auflegen**
+```bash
+curl -X POST http://localhost:8085/hangup
+```
+
+
+
+**Optional: Eigene Audio anlegen**
 
 - Momentane Audio löschen
 - Eine .wav Datei in den Test-Ordner einfügen. Die Datei sollte nicht länger als 5 Sekunden sein. 
@@ -81,3 +88,4 @@ python3 test_receive_audio_from_call.py
 ```bash
 ffmpeg -i input.wav -ar 16000 -ac 1 -sample_fmt s16 audio.wav
 ```
+- Falls keine Formatierung vorgenommen werden musste einfach die Datei in audio.wav umwandeln

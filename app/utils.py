@@ -12,3 +12,16 @@ def start_call(number: str):
         stderr=subprocess.PIPE
     )
     return process
+
+
+def end_call():
+    command = "echo 'q' | baresip"
+    env = os.environ.copy()
+    process = subprocess.Popen(
+        command,
+        shell=True,
+        env=env,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE
+    )
+    return process
