@@ -1,6 +1,3 @@
-# send_audio_from_call.py
-# WebSocket-Server, der Audio vom virtuellen Monitor aufnimmt und als .wav an den Client sendet
-
 import asyncio
 import websockets
 import subprocess

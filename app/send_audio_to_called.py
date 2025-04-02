@@ -34,7 +34,6 @@ async def handler(websocket):
         except Exception as e:
             print(f"paplay konnte nicht sauber beendet werden: {e}")
 
-        # Optional: Fehlerausgabe von paplay anzeigen
         stderr = paplay.stderr.read().decode().strip()
         if stderr:
             print(f"paplay Fehler: {stderr}")
@@ -46,7 +45,7 @@ async def handler(websocket):
 async def main():
     print(f"Starte WebSocket-Server auf Port {WEBSOCKET_PORT} (Audio-Eingabe)")
     async with websockets.serve(handler, "0.0.0.0", WEBSOCKET_PORT):
-        await asyncio.Future()  # run forever
+        await asyncio.Future()  
 
 if __name__ == "__main__":
     asyncio.run(main())

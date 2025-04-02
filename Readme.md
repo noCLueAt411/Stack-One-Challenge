@@ -28,6 +28,7 @@ Basiert auf https://github.com/louisoutin/Docker-Virtual-XVFB-pipewire
 ## Prerequisites
 
 Es müssen Docker, docker-compose und python3 (um die Tests auszuführen) auf dem Rechner installiert sein.
+Zudem muss für python die library websockets installiert werden.
 
 ## Start
 

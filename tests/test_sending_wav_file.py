@@ -4,7 +4,6 @@ import wave
 import os
 import time
 
-# === Parameter ===
 AUDIO_WS_URL = "ws://localhost:8087"
 WAV_FILE = "audio.wav"  # Pfad zur Audiodatei
 CHUNK_SIZE = 320  # 20ms bei 16kHz, 16bit mono
